@@ -1,0 +1,142 @@
+// для каждого компонента нужно импортить переменные, чтобы их использовать
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.header {
+    margin-top: 2rem;
+}
+.container {    
+    
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+           
+    &-icon {
+        padding: 0 5rem ;
+    }
+
+}
+   
+a.nav-link {
+
+        &:hover {
+        color: $c-text2;
+        }    
+    }
+    
+.nav {
+    
+  
+    &-list {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        
+    }
+
+    &-item {
+        display: inline-block;
+        padding: 1rem;
+           
+    }
+
+    &-link {
+        display: inline-block;
+        padding: 1rem 4rem ;          
+        font-family: $secondary-font;
+        font-size: 1.9rem;
+        line-height: 120%;  
+        letter-spacing: 1px;
+        color: $c-text
+                  
+    }            
+    
+}
+.icon_box {
+    display: flex;
+    margin: 0 -3rem;
+    justify-content: flex-end;
+}
+
+@media (max-width: $lg) {
+    
+}
+
+
+@media (max-width: $md) {
+    .header {
+        margin-left: 10rem;
+        margin-top: 7rem;
+      
+    }
+    .nav-link {
+        font-size: 2.2rem;
+    }
+        
+    .row-icon {
+        padding: 0 7rem;
+    }
+}
+
+
+@media (max-width: $sm) {
+
+    .row {
+        flex-wrap: wrap;
+    }   
+    .nav-list {
+        
+    }
+    img.icon {
+        width: 120%;
+        
+    }
+    .nav-link {
+        margin: 3rem ;
+        font-size: 4rem;
+    }
+    
+    .logo_img {
+       width: 60%;
+       margin: 0 40rem;
+       
+       
+    }
+    a.row-icon {
+        
+        
+    }
+    .icon_box {
+      
+        
+    }
+}
+
+
+@media (max-width: $xs) {
+    
+    .logo_img {
+
+        width: 60%;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }  
+    .nav-link {
+        margin: 2rem ;
+        font-size: 4.5rem;
+        flex-wrap: wrap;
+    } 
+    a.row-icon {
+       margin-top: 5rem; 
+        
+    }
+    .nav-list {
+        
+    }
+    img.icon {
+        width: 200%;
+    }
+}

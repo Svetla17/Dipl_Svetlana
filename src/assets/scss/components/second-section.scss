@@ -1,0 +1,102 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.second-section {
+   margin-top: 25rem;
+
+    &_row {
+        display: flex;
+        justify-content: space-between;
+        min-height: 81rem;
+        
+
+    }
+
+    &_img {
+        position: relative; 
+        .img-section2 { 
+            padding-top: 4.4rem;           
+            z-index: 0;
+        }
+        .img-smbl {
+            position: absolute;
+            left: -5rem;
+            top: 56.5rem;            
+            z-index: -1;
+        }
+        .img-bbl {
+            position: absolute;
+            right: -4.7rem;
+            top: 37.5rem;           
+            z-index: -1;
+        }
+        .img-points2 {
+            position: absolute;
+            left: 9rem;
+            top: 55rem;      
+            z-index: 1;
+        }
+        
+
+        
+    }
+    &_text {
+        padding-top: 9.5rem;
+        padding-left: 12.5rem;
+        padding-right: 10rem;
+    
+        
+
+        .second-section_subtitle {
+            font-family: $body-font;    
+            font-weight: bold;
+            font-size: 6rem;
+            line-height: 7.3rem;
+            color: $c-text;
+        }        
+    
+        .second-section_title {
+            font-family: $body-font;    
+            font-weight: bold;
+            font-size: 10rem;
+            line-height: 12.2rem;   
+            color: #fff;
+            text-shadow: 2px 0 2px $c-text, 0 2px 2px $c-text, -2px 0 2px $c-text, 0 -2px 2px $c-text;
+            padding-bottom: 5rem;
+        }
+        .second-section_description {            
+            font-family: $secondary-font;    
+            font-size: 2.2rem;
+            line-height: 4.8rem;
+            color: rgba(40, 42, 48, 0.5);
+            padding-bottom: 3.8rem;
+                
+        }
+        .second-section_button {
+             
+            background: #F7515C;
+            display: inline-block;
+            padding: 2.7rem 5.4rem;
+            font-family: $headers-font;       
+            font-weight: 600;
+            font-size: 220%;
+            line-height: 2,7rem;       
+            color: #FFF;
+                
+                &:hover {
+                    color: $c-text;
+                }    
+        }
+    } 
+}
+
+@media (max-width: $md) {
+    .second-section {    
+        margin-top: 10rem;
+        margin-left: 10rem;
+    }
+    .second-section_text{
+        margin-left: 10rem;
+    }
+    
+}

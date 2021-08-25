@@ -1,0 +1,117 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.last-section {    
+    margin-top: 17.3rem;
+
+    .container {
+    
+    }
+    
+    &_row {
+        display: flex;                  
+        min-height: 85rem;            
+    }
+    
+    &_text {
+        
+        padding-top: 25rem;
+        max-width: 60rem;
+        z-index: 1;
+
+        .subtitle {      
+            font-family: $body-font;    
+            font-weight: bold;
+            font-size: 10rem;
+            line-height: 12.2rem;   
+            color: #fff;
+            text-shadow: 2px 0 2px $c-text, 0 2px 2px $c-text, -2px 0 2px $c-text, 0 -2px 2px $c-text;
+            
+        }
+        .title {             
+            font-family: $body-font;    
+            font-weight: bold;
+            font-size: 10rem;
+            line-height: 12.2rem;   
+            line-height: 125%;            
+            color: $c-text;
+        
+            }
+                                
+
+        .Explore {
+            margin-top: 6rem;           
+            background: #F7515C;
+            display: inline-block;
+            padding: 3rem 7rem;
+            font-family: $headers-font;       
+            font-weight: 600;
+            font-size: 260%;
+            line-height: 3.2rem;       
+            color: #FFEDED;
+                
+                &:hover {
+                    color: $c-text;
+                }    
+            }
+    }
+            
+    
+          
+
+    &_img { 
+        position: relative;
+        
+
+        .img-main {            
+            position: absolute;
+            z-index: 1;
+            top: 10rem;
+            left: 21.3rem;
+        }
+
+        .img-sec {
+            position: absolute;
+            left: 31rem;
+            top: 48rem;
+            z-index: 0;
+            
+        }
+
+        .img-refl {
+            position: absolute;
+            background: rgba(251, 251, 251, 0.4);
+            left: -16rem;
+            z-index: -1;
+            
+        }
+    }
+}
+    
+@media (max-width: $md) {
+    
+    .last-section {    
+        margin-top: 10rem;
+        margin-left: 10rem;
+    }
+    
+    .last-section_img {
+        margin-left: 10rem;  
+    }
+    
+}
+@media (max-width: $sm) {
+    
+    .last-section {    
+        margin-top: 10rem;
+        margin-left: 20rem;
+    }
+    
+    .last-section_img {
+        margin-left: 20rem;  
+    }
+    
+}
+
+
+            

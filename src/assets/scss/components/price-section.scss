@@ -1,0 +1,100 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+
+.price-section {
+    margin-top: 17.3rem;
+    
+    &_row {        
+        min-height: 64.2rem;       
+
+    }
+    
+    &_text {     
+        padding-top: 5rem;
+        z-index: 1;      
+
+        .price-section_subtitle {
+            font-family: $body-font;    
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 4.9rem;            
+            color: $c-text;
+        }        
+    
+        .price-section_title {
+            font-family: $body-font;    
+            font-weight: bold;
+            font-size: 10rem;
+            line-height: 12.2rem;   
+            color: #fff;
+            text-shadow: 2px 0 2px $c-text, 0 2px 2px $c-text, -2px 0 2px $c-text, 0 -2px 2px $c-text;
+           
+        }
+    }
+    
+    &_card {
+        max-width: 114rem;
+        display: flex;
+        overflow: auto;        
+        
+        
+   
+        
+        .item {        
+            margin-top: -5rem;
+            text-align: center;
+            
+            
+            
+            
+            .item_img {  
+                                  
+                filter: drop-shadow(0px 0.4rem 10rem rgba(0, 0, 0, 0.02));
+            }
+
+            .item_title {
+                font-family: $headers-font;            
+                font-weight: bold;
+                font-size: 2.2rem;
+                line-height: 2.7rem;           
+                color: $c-text;
+                margin-top: -5.4rem;
+                position: relative;
+            }
+
+            .item_price {
+                position: relative;
+                font-family: $body-font;            
+                font-weight: normal;
+                font-size: 2.2rem;
+                line-height: 2.7rem;
+                color: rgba(40, 42, 48, 0.3);            
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .price-section {    
+        width: 150%;
+        margin-left: 10rem;
+       
+    }
+} 
+@media (max-width: $sm) {
+    .price-section {    
+        width: 250%;
+        margin-top: -5rem;
+        margin-left: 10rem;
+       
+    }
+}   
+@media (max-width: $xs) {
+    .price-section {    
+        width: 250%;
+        margin-top: -5rem;
+        margin-left: 10rem;
+       
+    }
+}                                           

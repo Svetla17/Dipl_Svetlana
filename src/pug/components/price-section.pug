@@ -1,0 +1,19 @@
+.price-section
+    .container
+        .price-section_row
+            .price-section_text
+                p.price-section_subtitle Our you have to buy
+                h2.price-section_title Product
+            .price-section_card
+                mixin item(img, title, price)
+                    .item
+                        img(src=img, alt=title).item_img
+                        .item_title=title
+                        .item_price=price
+                +item("./assets/imgs/pr-sect 1.jpg","Modern lamp study","$258")
+                +item("./assets/imgs/pr-sect 2.jpg","Modern lamp study","$135") 
+                +item("./assets/imgs/pr-sect 3.jpg","Classic lamp","$425")
+                +item("./assets/imgs/pr-sect 4.jpg","Clock cute","$331")
+                                        
+                            
+            

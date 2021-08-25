@@ -1,0 +1,193 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.first-section {    
+    margin-top: 10rem;
+
+    .container {
+    
+    }
+    
+    &_row {
+        display: flex;                  
+        min-height: 70rem;
+        margin-left: -10rem;
+        padding-top: 0.5rem;
+        
+
+    }
+    &_content {
+        display: flex;
+        max-width: 90rem;
+        min-height: 70rem;
+        background-image: url("../imgs/first-sec.markup.png");
+
+        .square {
+
+            height: 26.4rem;
+              
+        }              
+    }
+    &_text {
+        
+
+        .subtitle {      
+            padding-top: 8.7rem; 
+            padding-left: 6.5rem;
+            font-family: Poppins, sans-serif;            
+            font-weight: bold;
+            font-size: 2rem;           
+            color: $c-text2;
+        }
+        .title {             
+            padding-top: 4.4rem;
+            padding-left: 6.3rem;                       
+            font-family: $body-font;            
+            font-weight: bold;
+            font-size: 5.5rem;
+            line-height: 145%;            
+            color: $c-text;
+            
+            
+        }
+             
+    }
+
+    &_button {
+        margin-top: -1.5rem; 
+        display: flex;              
+        align-items: center;
+        
+        
+              
+
+        .Discover {
+            margin-left: 6.3rem;            
+            background: #F7515C;
+            display: inline-block;
+            padding: 2.7rem 5.6rem;
+            font-family: $headers-font;       
+            font-weight: 600;
+            font-size: 220%;
+            line-height: 2,7rem;       
+            color: #FFF;
+                
+                &:hover {
+                    color: $c-text;
+                }    
+            }
+        
+        .Vid {
+            z-index: 1;        
+
+            }
+            
+    }
+          
+
+    &_img { 
+        
+        position: relative;
+
+        .img-main {
+            position: relative;
+            right: 3rem;
+            bottom: 2.5rem;
+            z-index: 0;
+        }
+
+        .img-sec {
+            position: absolute;
+            left: 19.5rem;
+        }
+
+        .img-ripples {
+            position: absolute;
+            top: 4rem;
+            left: 2rem;
+            z-index: 1;
+        }
+    }
+}
+
+
+
+
+@media (max-width: $lg) {
+    .first-section {    
+        margin-top: 10rem;
+        margin-left: 10rem;
+    }
+    .first-section_content {
+        min-width: 70%;
+    }
+    .first-section_img {
+        margin-left: 5rem;  
+    }
+      
+}
+
+
+@media (max-width: $md) {
+    
+    .first-section {    
+        margin-top: 10rem;
+        margin-left: 10rem;
+    }
+    
+    .first-section_img {
+        margin-left: 5rem;  
+    }
+    .first-section_content {
+        min-width: 75%;
+    }
+    
+    .first-section_button {
+        flex-wrap: wrap;
+    }
+    .Discover {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: $sm) {
+    
+    .first-section_content {
+        min-width: 120%;
+    }
+    
+    .first-section_img {
+        margin-left: 8rem;  
+    }
+    
+}
+
+@media (max-width: $xs) {
+    .first-section {    
+        
+        margin-left: 15rem;
+    }
+    
+    
+    .first-section_row {
+        flex-wrap: wrap;
+    }
+
+    .first-section_content {
+        min-width: 140rem;
+        margin-top: -5rem;
+    }
+    
+    .first-section_img {
+        min-width: 140rem;
+        margin-top: -15rem;
+        margin-left: 85rem;
+    
+    }
+    .Discover {
+        margin-top: -2rem;
+    }
+   .first-section_button {
+        margin-top: 7rem;
+    }
+}
